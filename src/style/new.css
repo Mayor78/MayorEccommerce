@@ -1,0 +1,55 @@
+.small{
+    position: relative;
+    top: -17rem;
+    gap: 2px;
+}
+
+.smal{
+    position: relative;
+    top: -16rem;
+    gap: 2px;
+}
+
+.slide{
+ border: none;
+ width: auto;
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .bigger{
+      display: none;
+    }
+    .icon{
+        display: none;
+    }
+    .iconShow{
+        display: block;
+    }
+    .hideonsmall{
+      display: none;
+    }
+    .cart{
+      display: flex;
+    }
+   
+  }
+
+  @media screen and (min-width: 576px) {
+    .smaller{
+      display: none;
+    }
+    /* .products-carousel{
+      display: none;
+    } */
+    .iconShow{
+        display: none;
+    }
+   
+
+  }
+
