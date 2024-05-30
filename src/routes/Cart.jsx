@@ -40,7 +40,7 @@ const Cart = ({data}) => {
             </div>
 
             {totalAmount > 0 ? (
-                <div className='checkout'>
+                <div className='checkout mt-2'>
                     <div className='d-flex justify-content-between gap-3'>
                       <button onClick={() => navigate('/')} className='btn btn-primary '>Continue Shopping</button>
                      <button className='btn btn-danger'>Checkout</button>

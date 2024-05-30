@@ -14,31 +14,32 @@ const CartItem = ({ data }) => {
     }
     return (
         <div className="cart-item mb-2">
-            <div className=' cart d-flex justify-content-evenly'> 
-                <div>
-                <h4>product</h4>
+            <div className=' cart d-sm-inline-flex d-md-flex bg-body-secondary rounded shadow-lg '> 
+                <div className='d-flex gap-4 text-black '>
+               
                 <img src={data.image} alt={data.name}  style={imge}/>
                 <h4>{data.name}</h4>
+                
                 </div>
+                
+                <div className='d-flex mt-5 my-3 gap-2'>
+
+                <p>${data.price}</p>
+               
                 <div>
-                    <h4>price</h4>
-                    <p>${data.price}</p>
-                </div>
-                <div>
-                    <h4> Quantity</h4>
-                    
-                    
-                    <div className='d-flex gap-2'>
+               
+                    <div className='d-flex gap-2 border'>
                         <button className='text-white btn btn-danger' onClick={() => removeFromCart(data.id)} >-</button>
-                        <h4 className='fs-5'>{data.quantity}</h4>
+                        <h4 className='fs-4 '>{data.quantity}</h4>
                         <button className='text-white btn btn-success' onClick={() => addToCart(data.id)} >+ </button>
                        
                     </div>
 
                     </div>
+                    </div>
                     <div>
-                        <h4>subtotal</h4>
-                        <p>${parseFloat (data.price) * parseInt(data.quantity)}</p>
+                        {/* <h4>subtotal</h4> */}
+                        {/* <p>${parseFloat (data.price) * parseInt(data.quantity)}</p> */}
                     </div>
     
                
